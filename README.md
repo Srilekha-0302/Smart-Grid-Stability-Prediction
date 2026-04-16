@@ -1,11 +1,11 @@
 # ⚡ Smart Grid Stability Prediction System
 
-## 📌 Overview
+## Overview
 The **Smart Grid Stability Prediction System** is a machine learning–based application that predicts the stability of an electrical power grid using key dynamic parameters. It helps in identifying whether the grid is **stable or unstable** using data-driven techniques.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 - Predict grid stability using ML models  
 - Simulate real-time SCADA-like data input  
 - Provide a simple and interactive dashboard  
@@ -13,7 +13,7 @@ The **Smart Grid Stability Prediction System** is a machine learning–based app
 
 ---
 
-## 🧠 Technologies Used
+## Technologies Used
 - **Frontend:** React.js  
 - **Backend:** Flask (Python)  
 - **Machine Learning:** Scikit-learn (SVM)  
@@ -21,7 +21,7 @@ The **Smart Grid Stability Prediction System** is a machine learning–based app
 
 ---
 
-## ⚙️ Features
+## Features
 
 ### 🔹 Manual Prediction
 - User inputs:
@@ -47,7 +47,7 @@ The **Smart Grid Stability Prediction System** is a machine learning–based app
 
 ---
 
-## 📊 Input Parameters
+## Input Parameters
 Total **12 features**:
 
 - Reaction Time: t1, t2, t3, t4  
@@ -56,14 +56,14 @@ Total **12 features**:
 
 ---
 
-## 🤖 Machine Learning Model
+## Machine Learning Model
 - **Model:** Support Vector Machine (SVM)  
 - **Preprocessing:** StandardScaler  
 - **Accuracy:** ~97–98%  
 
 ---
 
-## 🔄 Workflow
+## Workflow
 1. Input data (manual / simulated)  
 2. Data preprocessing (scaling)  
 3. Model prediction  
@@ -108,7 +108,7 @@ npm install
 npm start
 ```
 
-🚀 Future Enhancements
+## Future Enhancements
 Integration with real SCADA systems
 
 Cloud deployment
@@ -119,5 +119,5 @@ Graph-based visualization
 
 Alert system
 
-📌 Conclusion
+## Conclusion
 This project demonstrates how machine learning can be applied to smart grid systems for stability prediction. The real-time simulation enhances understanding and usability of the system.
