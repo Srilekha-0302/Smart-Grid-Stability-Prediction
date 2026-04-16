@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #ecfeff, #f0fdf4);
+  color: #0f172a;
+}
+
+/* MAIN */
+.app {
+  padding: 40px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 34px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #6366f1, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tag {
+  color: #64748b;
+}
+
+/* INFO BLOCK */
+.infoBlock {
+  margin: 30px 0;
+  text-align: left;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+/* GRID */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.infoGrid div {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  transition: 0.2s;
+}
+
+.infoGrid div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* MODEL INFO */
+.modelInfo {
+  margin-top: 20px;
+  background: #ecfdf5;
+  padding: 16px;
+  border-left: 4px solid #10b981;
+  border-radius: 10px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  width: 340px;
+  border: 1px solid #e5e7eb;
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-bottom: 5px;
+}
+
+/* INPUT GRID */
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 120px); /* 👈 fixed width */
+  justify-content: center; /* centers inputs */
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* INPUT */
+input {
+  width: 100%; /* fits inside 120px grid */
+  background: #f1f5f9;
+  border: 1px solid #d1d5db;
+  padding: 8px 10px; /* 👈 slightly smaller */
+  border-radius: 8px;
+  font-size: 13px; /* 👈 makes it cleaner */
+  text-align: center; /* 👈 looks neat */
+}
+
+input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.15);
+}
+
+/* BUTTONS */
+.predict {
+  margin-top: 30px;
+  margin-left: 10px;
+  background: linear-gradient(135deg, #6366f1, #10b981);
+  border: none;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.predict:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99,102,241,0.25);
+}
+
+/* RESULT */
+.result {
+  margin-top: 25px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.stable {
+  color: #16a34a;
+}
+
+.unstable {
+  color: #dc2626;
+  animation: blink 1s infinite;
+}
+
+/* BLINK */
+@keyframes blink {
+  50% { opacity: 0.4; }
+}
+
+/* ABOUT */
+.about {
+  margin-top: 35px;
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+/* BETTER SPACING BETWEEN SECTIONS */
+.about + .about {
+  margin-top: 20px;
+}
