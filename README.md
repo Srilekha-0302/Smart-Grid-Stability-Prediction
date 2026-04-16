@@ -106,6 +106,7 @@ python app.py
 cd frontend
 npm install
 npm start
+```
 
 🚀 Future Enhancements
 Integration with real SCADA systems
