@@ -4,7 +4,13 @@
 The **Smart Grid Stability Prediction System** is a machine learning–based application that predicts the stability of an electrical power grid using key dynamic parameters. It helps in identifying whether the grid is **stable or unstable** using data-driven techniques.
 
 ---
+## Key Highlights
+- Achieved ~97–98% prediction accuracy using SVM
+- Built a real-time SCADA-like simulation system
+- Integrated React frontend with Flask ML backend
+- Supports live prediction monitoring and dashboard analytics
 
+---
 ## Objectives
 - Predict grid stability using ML models  
 - Simulate real-time SCADA-like data input  
@@ -97,27 +103,35 @@ SMART GRID/
 ## ▶️ How to Run
 
 ### 🔹 Backend
+
 ```bash
 cd backend
 pip install flask flask-cors numpy pandas scikit-learn joblib openpyxl
 python app.py
+```
 
-🔹 Frontend
+### 🔹 Frontend
+
+```bash
 cd frontend
 npm install
 npm start
 ```
 
+---
+
 ## Future Enhancements
-Integration with real SCADA systems
 
-Cloud deployment
+* Integration with real SCADA systems
+* Cloud deployment
+* Deep learning models
+* Graph-based visualization
+* Alert system
 
-Deep learning models
-
-Graph-based visualization
-
-Alert system
+---
 
 ## Conclusion
+
+This project demonstrates how machine learning can be applied to smart grid systems for stability prediction. The real-time simulation enhances understanding and usability of the system.
+ion
 This project demonstrates how machine learning can be applied to smart grid systems for stability prediction. The real-time simulation enhances understanding and usability of the system.
