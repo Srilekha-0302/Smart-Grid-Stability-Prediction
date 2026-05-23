@@ -1,102 +1,107 @@
 # ⚡ Smart Grid Stability Prediction System
 
 ## Overview
-The **Smart Grid Stability Prediction System** is a machine learning–based application that predicts the stability of an electrical power grid using key dynamic parameters. It helps in identifying whether the grid is **stable or unstable** using data-driven techniques.
+Smart Grid Stability Prediction System is a machine learning and deep learning based web application developed to classify the stability of electrical power grids using operational grid parameters such as reaction time, nominal power, and control gain.
+
+The system integrates machine learning models with a Flask backend and React frontend to provide real-time grid stability prediction through an interactive dashboard.
 
 ---
+
 ## Key Highlights
-- Achieved ~97–98% prediction accuracy using SVM
-- Built a real-time SCADA-like simulation system
-- Integrated React frontend with Flask ML backend
-- Supports live prediction monitoring and dashboard analytics
-
----
-## Objectives
-- Predict grid stability using ML models  
-- Simulate real-time SCADA-like data input  
-- Provide a simple and interactive dashboard  
-- Reduce dependency on complex analytical calculations  
+- Achieved highest prediction performance using Support Vector Machine (SVM)
+- Implemented multiple ML/DL models including Decision Tree, Random Forest, XGBoost, and MLP
+- Applied hyperparameter tuning and 5-fold cross-validation for model evaluation
+- Integrated Flask backend with React frontend for real-time prediction
+- Developed interactive dashboard for manual and simulated grid monitoring
 
 ---
 
 ## Technologies Used
-- **Frontend:** React.js  
-- **Backend:** Flask (Python)  
-- **Machine Learning:** Scikit-learn (SVM)  
-- **Libraries:** NumPy, Pandas, Joblib  
+
+### Frontend
+- React.js
+- HTML5
+- CSS3
+- JavaScript
+
+### Backend
+- Flask (Python)
+
+### Machine Learning & Deep Learning
+- Scikit-learn
+- NumPy
+- Pandas
+- Joblib
 
 ---
 
 ## Features
 
-### 🔹 Manual Prediction
-- User inputs:
+### Manual Stability Prediction
+- User input for:
   - Reaction Time (τ)
   - Power (P)
   - Gain (g)
-- Instant prediction of grid stability  
+- Instant prediction of grid stability
 
-### 🔹 Real-Time Simulation
-- Reads data from dataset (`visual.xlsx`)  
-- Simulates live SCADA input  
-- Predicts stability continuously  
-- Displays:
-  - Live data stream  
-  - Stability result  
-  - Running statistics  
-  - Recent logs  
+### Real-Time Simulation
+- Simulates continuous grid parameter input using dataset values
+- Displays live prediction updates and monitoring statistics
+- Tracks stable and unstable prediction states
 
-### 🔹 Interactive Dashboard
-- Clean UI with structured inputs  
-- Dynamic results display  
-- Simulation visualization  
+### Interactive Dashboard
+- Responsive user interface
+- Dynamic prediction display
+- Real-time monitoring visualization
 
 ---
 
 ## Input Parameters
-Total **12 features**:
 
-- Reaction Time: t1, t2, t3, t4  
-- Power: p1, p2, p3, p4  
-- Gain: g1, g2, g3, g4  
+The system uses 12 grid parameters:
+
+- Reaction Time: t1, t2, t3, t4
+- Power: p1, p2, p3, p4
+- Gain: g1, g2, g3, g4
 
 ---
 
-## Machine Learning Model
-- **Model:** Support Vector Machine (SVM)  
-- **Preprocessing:** StandardScaler  
-- **Accuracy:** ~97–98%  
+## Machine Learning Models
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Support Vector Machine (SVM)
+- XGBoost
+- Multilayer Perceptron (MLP)
 
 ---
 
 ## Workflow
-1. Input data (manual / simulated)  
-2. Data preprocessing (scaling)  
-3. Model prediction  
-4. Output result (Stable / Unstable)  
-5. Display in dashboard  
+1. Input grid parameters
+2. Data preprocessing and scaling
+3. Model prediction
+4. Stability classification
+5. Display prediction results on dashboard
 
 ---
 
-## 📁 Project Structure
-SMART GRID/
+## Project Structure
+
+SMART_GRID/
 │
 ├── backend/
-│ ├── app.py
-│ ├── svm_model.pkl
-│ ├── scaler.pkl
-│ ├── visual.xlsx
+│   ├── app.py
+│   ├── model.pkl
+│   ├── scaler.pkl
+│   ├── visual.xlsx
 │
 ├── frontend/
-│ ├── src/
-│ │ ├── App.js
-│ │ ├── Simulation.js
-│ │ ├── components/
-│ │ ├── App.css
-│ │ ├── Simulation.css
+│   ├── src/
+│   ├── components/
+│   ├── App.js
+│   ├── Simulation.js
 │
 └── README.md
-
 
 ---
 
@@ -122,11 +127,11 @@ npm start
 
 ## Future Enhancements
 
-* Integration with real SCADA systems
 * Cloud deployment
-* Deep learning models
+* Advanced deep learning architectures
+* Real-world grid data integration
 * Graph-based visualization
-* Alert system
+* Alert and monitoring system
 
 ---
 
